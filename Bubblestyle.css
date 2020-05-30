@@ -1,31 +1,84 @@
-<DOCTYPE HTML>
-<html lang="en">
- 
-<head>
+Body{
+background-image: url('https://images.assetsdelivery.com/compings_v2/cnuisin/cnuisin2001/cnuisin200100190.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: white;
+}
 
-  <title>Bubble Tea Fest</title>
-    <link rel="stylesheet" type="text/css" href="Bubblestyle.css">
+.img{ 
+ margin: auto;
+ }
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  grid-row-gap: 20px; 
+  grid-column-gap: 20px; 
+}
 
-  <ul>
-    <li><a href="Bubblehome.html">Basic Information</a></li>
-  <li> <a href="Bubblehistory.html"> History</a></li>
-    <li><a> Emily Butman and Nava Mavandadi</li></a>
-    </ul>
-</head>
-<body>
-<br>
-  <br>
-   <div class="container">
-    <div class="item1">
-       <h1> BUBBLE TEA FEST </h1>
-    <p>  BASIC INFORMATION <br> 
-     Bubble Tea Fest is taking place on June 24-25, 2020 at 12pm-5pm. For our event we rented out a section of 1549 Balboa Park, San Diego, CA 92101. Tickets are $20-$25 depending on age. Our tickets will be available at ticket booths on the days of the event.
-      </p> <p> Bubble Tea Fest has all the needs for your love of boba. There will be a variety of types of boba and Asain food. For entertainment we will have little contests where you can win boba related items.   <p> Our event will be serving many different types of boba and teas and drinks. We will also have culturally Asain foods to satisfy your hunger needs. Your first 10 drinks of boba are free and the rest will be 50 cents each. You get 3 free food items free and the rest are $1 each. Our age limit is everyone 10 and up. Our boba pearls are made of tapioca starch that comes from the cassava root, so compassionate customers can rest easy knowing that gelatin is not used in the making of these tiny balls of deliciousness. We try hard to select food and drink vendors who will provide food that satisfies everyone's food and drink needs. </p>
-<img src="Bubble Tea Fest Poster.png" class= "responsive">	
- </div>
- 
+ul{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  float: right;
+ background-color: #B5EAD7;
+  color: #FF9AA2;
+}
+
+li{
+  display: inline;
+  float: left;
+  
+}
+li a{
+  display: block;
+  text-decoration: none;
+padding: 5px 50px;
+  color: #f4858e;
+ }
+
+li a:hover{
+  color: black;
+}
+
+.item1{
+  background-color: #C7CEEA;
+  border: 1px solid #fff;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .item1{ 
+  flex-direction: column; 
+    background-color: pink;
+    width: 100%;
+  }
+  .container{
+    flex-direction: column;
+    background-color: purple;
+    width: 100%;
     
-</div>
-</body>
-</html>
-© 2020 GitHub, Inc.
+  }
+  body{ 
+  background-color: salmon; }
+  .history{
+    border: dotted 10px;
+    background-color: lightblue;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .img{
+	  flex-direction: column; 
+  }
+  .responsive { 
+  width: 100%; 
+  height: auto; }
+}
